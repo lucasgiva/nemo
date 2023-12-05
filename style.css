@@ -1,0 +1,165 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(28, 28, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/*SENHA -- INPUT -- BUTTON*/
+.container_form{
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #fff; 
+    margin: 5rem 0;
+    text-transform: uppercase;
+}
+
+.form_inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.senha{
+   margin-left: 1rem;
+   padding: .5rem;
+   border-radius: .3rem;
+   border: none;
+   text-align: center;
+   width: 8rem;
+}
+
+.text_input{
+    color: #fff; 
+    margin: 5rem 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container_certo{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem auto;
+    height: 70vh; 
+    width: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    background-color:  rgb(28, 28, 60);
+}
+.container{
+    align-self: center;
+    height: 23rem;
+    width: 50%; 
+    background-color: #fff;
+    border-radius: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_nemo{
+    height: 13rem;
+    width: 13rem;
+}
+
+.text_movie{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+    color: #fff; 
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn{
+   margin-top: 5rem;
+   padding: .1rem;
+   width: 8rem;
+   height: 2rem;   
+   text-transform: uppercase;
+   color: #000; 
+   border: none;
+   border-radius: .3rem;
+   background-color: #fff;
+   transition: ease .3s all;
+}
+
+.btn:hover{
+    background-color: rgb(70, 70, 233);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 710px) {
+
+   .title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+   }
+
+    .container_form{
+        width: 80vw;
+    }
+
+    .form_inputs{
+        flex-direction: column;
+    }
+
+    .senha{
+        margin-top: 1rem;
+    }
+
+    .container{
+        width: 80%; 
+        margin-top: 4rem; 
+    }
+
+    .text{
+        width: 80%; 
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn{
+        margin-top: 1rem;
+    }
+
+    /*painel dory*/
+    .container_certo{
+        margin: 0 auto;
+        height: 100vh; 
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+}
+
